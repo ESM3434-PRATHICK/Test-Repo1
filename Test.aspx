@@ -1,11 +1,15 @@
-<%@ Page Language="C#" %>
+<%-- create a code to hello world in aspx --%>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Test.aspx.cs" Inherits="Test" %>
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hello World Page</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a simple ASP.NET page.</p>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Hello, World!"></asp:Label>
+        </div>
+    </form>
 </body>
 </html>
